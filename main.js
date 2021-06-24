@@ -1,5 +1,5 @@
 // The keys and notes variables store the piano keys
-const keys = ['c-key', 'd-key', 'e-key', 'f-key', 'g-key', 'a-key', 'b-key', 'high-c-key', 'c-sharp-key', 'd-sharp-key', 'f-sharp-key', 'g-sharp-key', 'a-sharp-key'];
+const keys = ['c-key', 'd-key', 'e-key', 'f-key', 'g-key', 'a-key', 'b-key', 'high-c-key', 'c-sharp-key', 'd-sharp-key', 'f-sharp-key', 'g-sharp-key', 'a-sharp-key', 'd2-key', 'e2-key', 'f2-key', 'g2-key', 'a2-key', 'b2-key', 'high2-c-key', 'c2-sharp-key', 'd2-sharp-key', 'f2-sharp-key', 'g2-sharp-key', 'a2-sharp-key'];
 const notes = [];
 keys.forEach(function(key){
   notes.push(document.getElementById(key));
