@@ -103,7 +103,7 @@ startOver.onclick = function() {
   document.getElementById('letter-note-six').innerHTML = 'B';
 }
 document.getElementById('c-key').addEventListener('mousedown', myPlay); 
-document.getElementById('c-key').addEventListener('touchstart', myPlay); 
+document.getElementById('c-key').addEventListener('click', myPlay); 
 
 
 
