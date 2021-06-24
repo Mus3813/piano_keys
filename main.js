@@ -21,8 +21,8 @@ let eventAssignment=(note)=>{
     note.onmousedown= keyPlay;
     
   note.onmouseup=keyReturn;
-    note.touchstart=keyPlay;
-    note.touchend=keyReturn;
+    note.ontouchstart=keyPlay;
+    note.ontouchend=keyReturn;
   //key.addEventListener('mouseup',keyReturn)
 }
 
