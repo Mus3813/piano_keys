@@ -20,7 +20,7 @@ let eventAssignment=(note)=>{
     }*/
     note.onmousedown= keyPlay;
     
-  note.onmouseup=keyReturn;
+    note.onmouseup=keyReturn;
     note.ontouchstart=keyPlay;
     note.ontouchend=keyReturn;
   //key.addEventListener('mouseup',keyReturn)
@@ -102,3 +102,13 @@ startOver.onclick = function() {
   document.getElementById('word-six').innerHTML = 'YOU!';
   document.getElementById('letter-note-six').innerHTML = 'B';
 }
+document.getElementById('c-key').addEventListener('mousedown', myPlay); 
+document.getElementById('c-key').addEventListener('touchstart', myPlay); 
+
+
+
+function myPlay() {
+  var audio = new Audio("pianokeys/a3.mp3");
+  audio.play();
+} ;
+
