@@ -103,25 +103,27 @@ startOver.onclick = function() {
   document.getElementById('letter-note-six').innerHTML = 'B';
 }
 
-document.getElementById('c-key').addEventListener('mousedown', myPlay); 
-// function myPlay() {
-//   var audio = new Audio("https://freesound.org/s/203502/");
-//   audio.play();
-// } ;
-var flag = false;
-document.getElementById('c-key').addEventListener('touchstart', function(){
-  if (!flag) {
-    flag = true;
-    // console.log("Chales");
-    setTimeout(function(){ flag = false; }, 2000);
-    myPlay();
-  }
+document.getElementById('c-key').addEventListener('mousedown',myPlay); 
 
-  return false
-});
+  document.getElementById('c-key').addEventListener('touchstart', function(e){
+    console.log( e.type );
+    document.getElementById('c-key').removeEventListener('mousedown',myPlay);
+    myPlay();}); 
+// var flag = false;
+// document.getElementById('c-key').addEventListener('touchstart', function(e){
+//   if (!flag) {
+//     flag = true;
+//     console.log( e.type );
+//     setTimeout(function(){ flag = false; }, 2000);
+//     myPlay();
+//   }
+
+//   return false
+// });
 
 function myPlay() {
   var audio = new Audio("pianokeys/a3.mp3");
   audio.play();
+  console.log("played")
 } ;
 
