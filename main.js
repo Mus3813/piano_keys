@@ -112,8 +112,8 @@ var flag = false;
 document.getElementById('c-key').addEventListener('touchstart', function(){
   if (!flag) {
     flag = true;
-    console.log("Chales");
-    setTimeout(function(){ flag = false; }, 500);
+    // console.log("Chales");
+    setTimeout(function(){ flag = false; }, 2000);
     myPlay();
   }
 
