@@ -104,11 +104,23 @@ startOver.onclick = function() {
 }
 
 document.getElementById('c-key').addEventListener('click', myPlay); 
+function myPlay() {
+  var audio = new Audio("https://freesound.org/s/203502/");
+  audio.play();
+} ;
+/*var flag = false;
+document.getElementById('c-key').addEventListener('touchstart', function(){
+  if (!flag) {
+    flag = true;
+    setTimeout(function(){ flag = false; }, 100);
+    myPlay
+  }
 
-
+  return false
+});
 
 function myPlay() {
   var audio = new Audio("pianokeys/a3.mp3");
   audio.play();
 } ;
-
+*/
